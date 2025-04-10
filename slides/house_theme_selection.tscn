@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0xsfai052e7i"]
+
+[ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_vtsnk"]
+[ext_resource type="Script" uid="uid://d1l65dskoes61" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_dtoft"]
+
+[node name="HouseThemeSelection" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 768.0
+script = ExtResource("1_vtsnk")
+metadata/_custom_type_script = "uid://bp0csfb6elaxk"
+
+[node name="MPFCarousel" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_dtoft")
+carousel_name = "env_house_theme_selection"
+metadata/_custom_type_script = "uid://d1l65dskoes61"
+
+[node name="gryffindor" type="Node2D" parent="MPFCarousel"]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="MPFCarousel/gryffindor"]
+offset_right = 1024.0
+offset_bottom = 768.0
+color = Color(1, 0.286275, 0.164706, 1)
+
+[node name="slytherin" type="Node2D" parent="MPFCarousel"]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="MPFCarousel/slytherin"]
+offset_right = 1024.0
+offset_bottom = 768.0
+color = Color(0.296065, 0.642231, 0.654383, 1)
+
+[node name="hufflepuff" type="Node2D" parent="MPFCarousel"]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="MPFCarousel/hufflepuff"]
+offset_right = 1024.0
+offset_bottom = 768.0
+color = Color(0.622385, 0.463314, 0.97398, 1)
+
+[node name="ravenclaw" type="Node2D" parent="MPFCarousel"]
+
+[node name="ColorRect" type="ColorRect" parent="MPFCarousel/ravenclaw"]
+offset_right = 1024.0
+offset_bottom = 768.0
+color = Color(0.45221, 0.43079, 0.0455827, 1)

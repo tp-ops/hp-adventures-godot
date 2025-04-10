@@ -9,6 +9,8 @@
 [node name="Attract" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 768.0
 script = ExtResource("1_r1mnt")
 metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 
@@ -27,6 +29,7 @@ carousel_name = "attract"
 metadata/_custom_type_script = "uid://d1l65dskoes61"
 
 [node name="title" type="Label" parent="MPFCarousel"]
+layout_mode = 0
 offset_left = 1.0
 offset_top = 225.0
 offset_right = 1024.0

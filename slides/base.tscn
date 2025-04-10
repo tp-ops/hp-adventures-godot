@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6iprbom5mv3i"]
+
+[ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_b71wd"]
+
+[node name="Base" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1024.0
+offset_bottom = 768.0
+script = ExtResource("1_b71wd")
+metadata/_custom_type_script = "uid://bp0csfb6elaxk"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 1024.0
+offset_bottom = 768.0
+color = Color(0.719889, 0.394926, 0.355061, 1)

@@ -1,20 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://cqhws6g6o06f7"]
+[gd_scene load_steps=3 format=3 uid="uid://cqhws6g6o06f7"]
 
 [ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_67lfp"]
+[ext_resource type="Texture2D" uid="uid://3owh0jncvxos" path="res://images/ravenclaw.jpg" id="2_iibrd"]
 
 [node name="ThemeRavenclaw" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1024.0
-offset_bottom = 768.0
 script = ExtResource("1_67lfp")
 metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.390028, 0.345805, 0.192206, 0.780392)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(800, 450)
+scale = Vector2(0.833, 0.833)
+texture = ExtResource("2_iibrd")

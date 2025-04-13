@@ -1,20 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://cps8d6y2parry"]
+[gd_scene load_steps=3 format=3 uid="uid://cps8d6y2parry"]
 
 [ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_vdod8"]
+[ext_resource type="Texture2D" uid="uid://beho8a0athxs5" path="res://images/hufflepuff.jpg" id="2_f7hga"]
 
 [node name="ThemeHufflepuff" type="Control"]
 layout_mode = 3
 anchors_preset = 0
-offset_right = 1024.0
-offset_bottom = 768.0
+offset_right = 1600.0
+offset_bottom = 900.0
 script = ExtResource("1_vdod8")
 metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.517647, 0, 0.686275, 0.780392)
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(800, 450)
+scale = Vector2(0.833, 0.833)
+texture = ExtResource("2_f7hga")

@@ -1,9 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bo41yempxk6u7"]
+[gd_scene load_steps=3 format=3 uid="uid://bo41yempxk6u7"]
 
 [ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ayux5"]
 [ext_resource type="Texture2D" uid="uid://bdkr85hwi3huf" path="res://images/gryffindor.jpg" id="2_h2p5q"]
-[ext_resource type="Theme" uid="uid://fqbgej1m7bey" path="res://themes/default.tres" id="3_tbfd6"]
-[ext_resource type="Script" uid="uid://1bcv0gfng5rw" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="4_ubpua"]
 
 [node name="ThemeGryffindor" type="Control"]
 layout_mode = 3
@@ -17,26 +15,3 @@ metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 position = Vector2(800, 450)
 scale = Vector2(0.833, 0.833)
 texture = ExtResource("2_h2p5q")
-
-[node name="player_score" type="Label" parent="."]
-layout_mode = 1
-anchors_preset = 14
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_top = 250.0
-offset_bottom = 371.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("3_tbfd6")
-theme_override_colors/font_color = Color(0.745098, 0.584314, 0, 1)
-theme_override_constants/outline_size = 25
-theme_override_font_sizes/font_size = 120
-text = "10.750.000"
-horizontal_alignment = 1
-vertical_alignment = 1
-script = ExtResource("4_ubpua")
-variable_name = "score"
-comma_separate = true
-min_digits = 2
-metadata/_custom_type_script = "uid://1bcv0gfng5rw"

@@ -6,6 +6,8 @@
 [node name="ThemeRavenclaw" type="Control"]
 layout_mode = 3
 anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
 script = ExtResource("1_67lfp")
 metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 

@@ -31,6 +31,7 @@ carousel_name = "env_house_theme_selection"
 metadata/_custom_type_script = "uid://d1l65dskoes61"
 
 [node name="gryffindor" type="Node2D" parent="MPFCarousel"]
+visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="MPFCarousel/gryffindor"]
 position = Vector2(800, 450)
@@ -150,7 +151,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ravenclaw" type="Node2D" parent="MPFCarousel"]
-visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="MPFCarousel/ravenclaw"]
 position = Vector2(800, 450)
@@ -270,16 +270,47 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label5" type="Label" parent="."]
-layout_mode = 0
-offset_left = 229.0
-offset_top = 49.0
-offset_right = 1309.0
-offset_bottom = 225.0
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 77.0
+offset_bottom = 203.0
+grow_horizontal = 2
 theme = ExtResource("1_fqpw7")
 theme_override_colors/font_color = Color(0.592781, 0.616151, 0.569162, 1)
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 10
 theme_override_font_sizes/font_size = 125
 text = "CHOOSE WISELY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label6" type="Label" parent="."]
+layout_mode = 0
+offset_left = 308.0
+offset_top = 287.0
+offset_right = 552.0
+offset_bottom = 413.0
+theme = ExtResource("1_fqpw7")
+theme_override_colors/font_color = Color(0.567756, 0.55552, 0.57956, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_font_sizes/font_size = 40
+text = "Use flippers to rotate"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label7" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1029.0
+offset_top = 285.0
+offset_right = 1309.0
+offset_bottom = 411.0
+theme = ExtResource("1_fqpw7")
+theme_override_colors/font_color = Color(0.567756, 0.55552, 0.57956, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 11
+theme_override_font_sizes/font_size = 40
+text = "Press START to select"
 horizontal_alignment = 1
 vertical_alignment = 1

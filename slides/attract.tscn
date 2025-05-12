@@ -17,15 +17,6 @@ theme = ExtResource("1_twbla")
 script = ExtResource("1_r1mnt")
 metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 
-[node name="ColorRect" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.207843, 0.384314, 0.686275, 1)
-
 [node name="MPFCarousel" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 15
@@ -91,15 +82,15 @@ position = Vector2(800, 450)
 texture = ExtResource("5_nlvwg")
 
 [node name="credits_var" type="Label" parent="MPFCarousel/credits"]
-offset_left = 382.0
-offset_top = 456.0
-offset_right = 1230.0
-offset_bottom = 657.0
+offset_left = 371.0
+offset_top = 694.0
+offset_right = 1219.0
+offset_bottom = 895.0
 theme = ExtResource("1_twbla")
 theme_override_colors/font_color = Color(0.737255, 0.862745, 0.913725, 1)
 theme_override_constants/outline_size = 20
-theme_override_font_sizes/font_size = 200
-text = "Credits Sample"
+theme_override_font_sizes/font_size = 120
+text = "CREDITS"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_f161n")

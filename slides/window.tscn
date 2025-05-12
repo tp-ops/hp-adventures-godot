@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhsnh43pcjnhp"]
+
+[ext_resource type="Script" uid="uid://xy6nl4i70dlm" path="res://addons/mpf-gmc/classes/mpf_window.gd" id="1_xdkmp"]
+[ext_resource type="Script" uid="uid://bipu3tb8i7vrk" path="res://addons/mpf-gmc/classes/mpf_display.gd" id="2_xdkmp"]
+[ext_resource type="PackedScene" uid="uid://belkug6sa4arr" path="res://addons/mpf-gmc/slides/startup.tscn" id="3_rep5c"]
+
+[node name="MPFWindow" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+script = ExtResource("1_xdkmp")
+metadata/_custom_type_script = "uid://xy6nl4i70dlm"
+
+[node name="MPFDisplay" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_xdkmp")
+is_default = true
+initial_slide = ExtResource("3_rep5c")
+metadata/_custom_type_script = "uid://bipu3tb8i7vrk"

@@ -3,12 +3,13 @@
 [ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ayux5"]
 [ext_resource type="Texture2D" uid="uid://5mu2n4uga3pu" path="res://images/gryffindor.jpg" id="2_h2p5q"]
 
-[node name="ThemeGryffindor" type="Control"]
+[node name="ThemeGryffindor" type="Control" node_paths=PackedStringArray("animation_player")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1600.0
 offset_bottom = 900.0
 script = ExtResource("1_ayux5")
+animation_player = NodePath("")
 metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

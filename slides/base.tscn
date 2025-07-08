@@ -1,15 +1,56 @@
-[gd_scene load_steps=4 format=3 uid="uid://b6iprbom5mv3i"]
+[gd_scene load_steps=8 format=3 uid="uid://b6iprbom5mv3i"]
 
 [ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_b71wd"]
 [ext_resource type="Theme" uid="uid://fqbgej1m7bey" path="res://themes/default.tres" id="2_mixwp"]
 [ext_resource type="Script" uid="uid://1bcv0gfng5rw" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_myvl5"]
 
-[node name="Base" type="Control"]
+[sub_resource type="Animation" id="Animation_qjsot"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_mixwp"]
+resource_name = "active"
+
+[sub_resource type="Animation" id="Animation_myvl5"]
+resource_name = "created"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6vrr4"]
+_data = {
+&"RESET": SubResource("Animation_qjsot"),
+&"active": SubResource("Animation_mixwp"),
+&"created": SubResource("Animation_myvl5")
+}
+
+[node name="Base" type="Control" node_paths=PackedStringArray("animation_player")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1600.0
 offset_bottom = 900.0
 script = ExtResource("1_b71wd")
+animation_player = NodePath("AnimationPlayer")
 metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 
 [node name="player_score" type="Label" parent="."]
@@ -19,16 +60,16 @@ anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
 offset_left = 2.0
-offset_top = 250.0
+offset_top = 261.0
 offset_right = 2.0
-offset_bottom = 371.0
+offset_bottom = 382.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("2_mixwp")
 theme_override_colors/font_color = Color(0.745098, 0.584314, 0, 1)
 theme_override_constants/outline_size = 25
 theme_override_font_sizes/font_size = 120
-text = "10.750.000"
+text = "115.758.590"
 horizontal_alignment = 1
 vertical_alignment = 1
 script = ExtResource("3_myvl5")
@@ -36,3 +77,60 @@ variable_name = "score"
 comma_separate = true
 min_digits = 2
 metadata/_custom_type_script = "uid://1bcv0gfng5rw"
+
+[node name="player_nr" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 147.0
+offset_top = -231.0
+offset_right = 332.0
+offset_bottom = -110.0
+grow_vertical = 0
+theme = ExtResource("2_mixwp")
+theme_override_colors/font_color = Color(0.745098, 0.584314, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/font_size = 60
+text = "Player 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_myvl5")
+variable_name = "number"
+comma_separate = true
+min_digits = 1
+template_string = "Player %s"
+metadata/_custom_type_script = "uid://1bcv0gfng5rw"
+
+[node name="ball_nr" type="Label" parent="."]
+custom_minimum_size = Vector2(25, 0)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -332.0
+offset_top = -232.0
+offset_right = -134.0
+offset_bottom = -111.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("2_mixwp")
+theme_override_colors/font_color = Color(0.745098, 0.584314, 0, 1)
+theme_override_constants/outline_size = 25
+theme_override_font_sizes/font_size = 60
+text = "Ball 1"
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("3_myvl5")
+variable_name = "ball"
+comma_separate = true
+min_digits = 2
+template_string = "Ball %s"
+metadata/_custom_type_script = "uid://1bcv0gfng5rw"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_6vrr4")
+}

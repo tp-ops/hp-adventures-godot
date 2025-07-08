@@ -5,8 +5,8 @@
 [ext_resource type="Script" uid="uid://d1l65dskoes61" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_hhxni"]
 [ext_resource type="Script" uid="uid://1bcv0gfng5rw" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_f161n"]
 [ext_resource type="Texture2D" uid="uid://dounln3l35d26" path="res://addons/mpf-gmc/images/logo_mpf.png" id="4_f161n"]
-[ext_resource type="Texture2D" uid="uid://mqyfseohufci" path="res://images/attract_title_1.jpg" id="4_twbla"]
-[ext_resource type="Texture2D" uid="uid://dftjlgeun28sy" path="res://images/attract_title_2.jpg" id="5_nlvwg"]
+[ext_resource type="Texture2D" uid="uid://dc78wbq8sr4ye" path="res://images/attract_title_1.jpg" id="4_twbla"]
+[ext_resource type="Texture2D" uid="uid://c3e673u3uf7wm" path="res://images/attract_title_2.jpg" id="5_nlvwg"]
 
 [node name="Attract" type="Control"]
 layout_mode = 3

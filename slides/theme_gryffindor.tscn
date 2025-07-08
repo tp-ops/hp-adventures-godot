@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bo41yempxk6u7"]
 
 [ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ayux5"]
-[ext_resource type="Texture2D" uid="uid://bdkr85hwi3huf" path="res://images/gryffindor.jpg" id="2_h2p5q"]
+[ext_resource type="Texture2D" uid="uid://5mu2n4uga3pu" path="res://images/gryffindor.jpg" id="2_h2p5q"]
 
 [node name="ThemeGryffindor" type="Control"]
 layout_mode = 3

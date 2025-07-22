@@ -1,12 +1,16 @@
-[gd_scene load_steps=8 format=3 uid="uid://df4ifvyo2j6fv"]
+[gd_scene load_steps=12 format=3 uid="uid://df4ifvyo2j6fv"]
 
 [ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
 [ext_resource type="Theme" uid="uid://fqbgej1m7bey" path="res://themes/default.tres" id="1_twbla"]
 [ext_resource type="Script" uid="uid://d1l65dskoes61" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_hhxni"]
 [ext_resource type="Script" uid="uid://1bcv0gfng5rw" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_f161n"]
 [ext_resource type="Texture2D" uid="uid://dounln3l35d26" path="res://addons/mpf-gmc/images/logo_mpf.png" id="4_f161n"]
-[ext_resource type="Texture2D" uid="uid://dc78wbq8sr4ye" path="res://images/attract_title_1.jpg" id="4_twbla"]
-[ext_resource type="Texture2D" uid="uid://c3e673u3uf7wm" path="res://images/attract_title_2.jpg" id="5_nlvwg"]
+[ext_resource type="Texture2D" uid="uid://mqyfseohufci" path="res://images/attract_title_1.jpg" id="4_twbla"]
+[ext_resource type="Texture2D" uid="uid://dftjlgeun28sy" path="res://images/attract_title_2.jpg" id="5_nlvwg"]
+[ext_resource type="Texture2D" uid="uid://bgxjyntgojhup" path="res://images/wp2141444-wallpaper-boy.jpg" id="7_bo6y5"]
+[ext_resource type="Texture2D" uid="uid://cmid66pi5o0v6" path="res://images/wp2900128-hd-harry-potter-wallpapers.jpg" id="8_bvyxe"]
+[ext_resource type="Texture2D" uid="uid://dt682bxggyfu5" path="res://images/logo_opp.png" id="8_h0ope"]
+[ext_resource type="Texture2D" uid="uid://camamxjca6fay" path="res://images/logo_cobrapin.png" id="9_vr35g"]
 
 [node name="Attract" type="Control"]
 layout_mode = 3
@@ -36,21 +40,26 @@ position = Vector2(800, 253)
 scale = Vector2(0.833, 0.833)
 texture = ExtResource("4_twbla")
 
+[node name="Sprite2D2" type="Sprite2D" parent="MPFCarousel/title"]
+position = Vector2(764, 288.5)
+scale = Vector2(0.906482, 0.906482)
+texture = ExtResource("7_bo6y5")
+
 [node name="title" type="Label" parent="MPFCarousel/title"]
 anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 88.0
-offset_top = -276.5
-offset_right = 1493.0
-offset_bottom = 425.5
+offset_left = -378.0
+offset_top = -139.5
+offset_right = 1027.0
+offset_bottom = 562.5
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_twbla")
 theme_override_colors/font_color = Color(0.736968, 0.863893, 0.913577, 1)
 theme_override_constants/outline_size = 30
-theme_override_font_sizes/font_size = 375
+theme_override_font_sizes/font_size = 160
 text = "Harry Potter"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -60,28 +69,28 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 75.0
-offset_top = 252.5
-offset_right = 1534.0
-offset_bottom = 609.5
+offset_left = 65.0
+offset_top = 243.5
+offset_right = 1524.0
+offset_bottom = 600.5
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_twbla")
 theme_override_colors/font_color = Color(0.736968, 0.863893, 0.913577, 1)
 theme_override_constants/outline_size = 30
-theme_override_font_sizes/font_size = 289
+theme_override_font_sizes/font_size = 240
 text = "Pinball Adventures"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="credits" type="Node2D" parent="MPFCarousel"]
+[node name="coins" type="Node2D" parent="MPFCarousel"]
 visible = false
 
-[node name="Sprite2D2" type="Sprite2D" parent="MPFCarousel/credits"]
+[node name="Sprite2D2" type="Sprite2D" parent="MPFCarousel/coins"]
 position = Vector2(800, 450)
 texture = ExtResource("5_nlvwg")
 
-[node name="credits_var" type="Label" parent="MPFCarousel/credits"]
+[node name="credits_var" type="Label" parent="MPFCarousel/coins"]
 offset_left = 371.0
 offset_top = 694.0
 offset_right = 1219.0
@@ -176,13 +185,27 @@ variable_type = 2
 variable_name = "player2_score"
 metadata/_custom_type_script = "uid://1bcv0gfng5rw"
 
-[node name="logo" type="Sprite2D" parent="MPFCarousel"]
+[node name="credits" type="Node2D" parent="MPFCarousel"]
 visible = false
 position = Vector2(796, 450)
 scale = Vector2(0.795455, 0.825)
+
+[node name="back_credits" type="Sprite2D" parent="MPFCarousel/credits"]
+position = Vector2(11.3143, -26.6673)
+scale = Vector2(0.729568, 0.729568)
+texture = ExtResource("8_bvyxe")
+
+[node name="mpf" type="Sprite2D" parent="MPFCarousel/credits"]
+position = Vector2(-554.4, 289.697)
+scale = Vector2(1.80942, 1.80942)
 texture = ExtResource("4_f161n")
 
-[node name="logo3" type="Sprite2D" parent="."]
-position = Vector2(1483, 805)
-scale = Vector2(0.795455, 0.825)
-texture = ExtResource("4_f161n")
+[node name="opp" type="Sprite2D" parent="MPFCarousel/credits"]
+position = Vector2(528, 273.939)
+scale = Vector2(0.521011, 0.521011)
+texture = ExtResource("8_h0ope")
+
+[node name="cobrapin" type="Sprite2D" parent="MPFCarousel/credits"]
+position = Vector2(524.091, 412.038)
+scale = Vector2(0.371349, 0.371349)
+texture = ExtResource("9_vr35g")

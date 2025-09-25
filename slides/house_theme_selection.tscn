@@ -31,7 +31,6 @@ carousel_name = "env_house_theme_selection"
 metadata/_custom_type_script = "uid://d1l65dskoes61"
 
 [node name="gryffindor" type="Node2D" parent="MPFCarousel"]
-visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="MPFCarousel/gryffindor"]
 position = Vector2(800, 450)
@@ -151,6 +150,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="ravenclaw" type="Node2D" parent="MPFCarousel"]
+visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="MPFCarousel/ravenclaw"]
 position = Vector2(800, 450)

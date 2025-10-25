@@ -1,14 +1,14 @@
 [gd_scene load_steps=12 format=3 uid="uid://df4ifvyo2j6fv"]
 
-[ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_r1mnt"]
 [ext_resource type="Theme" uid="uid://fqbgej1m7bey" path="res://themes/default.tres" id="1_twbla"]
-[ext_resource type="Script" uid="uid://d1l65dskoes61" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_hhxni"]
-[ext_resource type="Script" uid="uid://1bcv0gfng5rw" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_f161n"]
+[ext_resource type="Script" uid="uid://dpe3dq8axt3g7" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_hhxni"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_f161n"]
 [ext_resource type="Texture2D" uid="uid://dounln3l35d26" path="res://addons/mpf-gmc/images/logo_mpf.png" id="4_f161n"]
 [ext_resource type="Texture2D" uid="uid://mqyfseohufci" path="res://images/attract_title_1.jpg" id="4_twbla"]
 [ext_resource type="Texture2D" uid="uid://dftjlgeun28sy" path="res://images/attract_title_2.jpg" id="5_nlvwg"]
 [ext_resource type="Texture2D" uid="uid://bgxjyntgojhup" path="res://images/wp2141444-wallpaper-boy.jpg" id="7_bo6y5"]
-[ext_resource type="Texture2D" uid="uid://cmid66pi5o0v6" path="res://images/wp2900128-hd-harry-potter-wallpapers.jpg" id="8_bvyxe"]
+[ext_resource type="Texture2D" uid="uid://cb3lrnstrl40q" path="res://images/9078ebde5edebd8c168fe2b31e03d35b0.jpg" id="8_bo6y5"]
 [ext_resource type="Texture2D" uid="uid://dt682bxggyfu5" path="res://images/logo_opp.png" id="8_h0ope"]
 [ext_resource type="Texture2D" uid="uid://camamxjca6fay" path="res://images/logo_cobrapin.png" id="9_vr35g"]
 
@@ -19,7 +19,6 @@ offset_right = 1600.0
 offset_bottom = 900.0
 theme = ExtResource("1_twbla")
 script = ExtResource("1_r1mnt")
-metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 
 [node name="MPFCarousel" type="Control" parent="."]
 layout_mode = 1
@@ -30,9 +29,9 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_hhxni")
 carousel_name = "attract"
-metadata/_custom_type_script = "uid://d1l65dskoes61"
 
 [node name="title" type="Node2D" parent="MPFCarousel"]
+visible = false
 position = Vector2(0, 197.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="MPFCarousel/title"]
@@ -84,7 +83,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="coins" type="Node2D" parent="MPFCarousel"]
-visible = false
 
 [node name="Sprite2D2" type="Sprite2D" parent="MPFCarousel/coins"]
 position = Vector2(800, 450)
@@ -105,7 +103,6 @@ vertical_alignment = 1
 script = ExtResource("3_f161n")
 variable_type = 2
 variable_name = "credits_string"
-metadata/_custom_type_script = "uid://1bcv0gfng5rw"
 
 [node name="last_scores_1p" type="Node2D" parent="MPFCarousel"]
 visible = false
@@ -123,7 +120,6 @@ variable_type = 2
 variable_name = "player1_score"
 comma_separate = true
 min_digits = 2
-metadata/_custom_type_script = "uid://1bcv0gfng5rw"
 
 [node name="last_scores_2p" type="Node2D" parent="MPFCarousel"]
 visible = false
@@ -141,7 +137,6 @@ variable_type = 2
 variable_name = "player1_score"
 comma_separate = true
 min_digits = 2
-metadata/_custom_type_script = "uid://1bcv0gfng5rw"
 
 [node name="player2_score" type="Label" parent="MPFCarousel/last_scores_2p"]
 offset_right = 1024.0
@@ -153,7 +148,6 @@ vertical_alignment = 1
 script = ExtResource("3_f161n")
 variable_type = 2
 variable_name = "player2_score"
-metadata/_custom_type_script = "uid://1bcv0gfng5rw"
 
 [node name="last_scores_3p" type="Node2D" parent="MPFCarousel"]
 visible = false
@@ -171,7 +165,6 @@ variable_type = 2
 variable_name = "player1_score"
 comma_separate = true
 min_digits = 2
-metadata/_custom_type_script = "uid://1bcv0gfng5rw"
 
 [node name="player2_score" type="Label" parent="MPFCarousel/last_scores_3p"]
 offset_right = 1024.0
@@ -183,29 +176,27 @@ vertical_alignment = 1
 script = ExtResource("3_f161n")
 variable_type = 2
 variable_name = "player2_score"
-metadata/_custom_type_script = "uid://1bcv0gfng5rw"
 
 [node name="credits" type="Node2D" parent="MPFCarousel"]
-visible = false
 position = Vector2(796, 450)
 scale = Vector2(0.795455, 0.825)
 
 [node name="back_credits" type="Sprite2D" parent="MPFCarousel/credits"]
-position = Vector2(11.3143, -26.6673)
-scale = Vector2(0.729568, 0.729568)
-texture = ExtResource("8_bvyxe")
+position = Vector2(-3.7714348, 2.4242444)
+scale = Vector2(1.0528566, 1.0157127)
+texture = ExtResource("8_bo6y5")
 
 [node name="mpf" type="Sprite2D" parent="MPFCarousel/credits"]
-position = Vector2(-554.4, 289.697)
+position = Vector2(-680.1139, -256.9697)
 scale = Vector2(1.80942, 1.80942)
 texture = ExtResource("4_f161n")
 
 [node name="opp" type="Sprite2D" parent="MPFCarousel/credits"]
-position = Vector2(528, 273.939)
-scale = Vector2(0.521011, 0.521011)
+position = Vector2(-680.11383, 157.57578)
+scale = Vector2(0.5797477, 0.5797476)
 texture = ExtResource("8_h0ope")
 
 [node name="cobrapin" type="Sprite2D" parent="MPFCarousel/credits"]
-position = Vector2(524.091, 412.038)
-scale = Vector2(0.371349, 0.371349)
+position = Vector2(-680.1139, 378.18182)
+scale = Vector2(0.35546345, 0.35546345)
 texture = ExtResource("9_vr35g")

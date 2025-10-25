@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://b0pi1bydm2rx8"]
 
-[ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ealpc"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_ealpc"]
 [ext_resource type="Theme" uid="uid://fqbgej1m7bey" path="res://themes/default.tres" id="2_0ppf7"]
 
 [node name="SkillShots" type="Control"]

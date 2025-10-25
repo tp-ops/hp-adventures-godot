@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://b6iprbom5mv3i"]
 
-[ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_b71wd"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_b71wd"]
 [ext_resource type="Theme" uid="uid://fqbgej1m7bey" path="res://themes/default.tres" id="2_mixwp"]
-[ext_resource type="Script" uid="uid://1bcv0gfng5rw" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_myvl5"]
+[ext_resource type="Script" uid="uid://bfvhmv2eirpua" path="res://addons/mpf-gmc/classes/mpf_variable.gd" id="3_myvl5"]
 
 [sub_resource type="Animation" id="Animation_qjsot"]
 length = 0.001

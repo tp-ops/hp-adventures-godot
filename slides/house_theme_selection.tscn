@@ -1,8 +1,8 @@
 [gd_scene load_steps=8 format=3 uid="uid://b0xsfai052e7i"]
 
 [ext_resource type="Theme" uid="uid://fqbgej1m7bey" path="res://themes/default.tres" id="1_fqpw7"]
-[ext_resource type="Script" uid="uid://bp0csfb6elaxk" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_vtsnk"]
-[ext_resource type="Script" uid="uid://d1l65dskoes61" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_dtoft"]
+[ext_resource type="Script" uid="uid://dru3usokwlhd3" path="res://addons/mpf-gmc/classes/mpf_slide.gd" id="1_vtsnk"]
+[ext_resource type="Script" uid="uid://dpe3dq8axt3g7" path="res://addons/mpf-gmc/classes/mpf_carousel.gd" id="2_dtoft"]
 [ext_resource type="Texture2D" uid="uid://bdkr85hwi3huf" path="res://images/gryffindor.jpg" id="4_q6qjv"]
 [ext_resource type="Texture2D" uid="uid://ctehb2kfqh6y4" path="res://images/slytherin.jpg" id="5_q6qjv"]
 [ext_resource type="Texture2D" uid="uid://beho8a0athxs5" path="res://images/hufflepuff.jpg" id="6_rwbrk"]
@@ -15,7 +15,6 @@ offset_right = 1600.0
 offset_bottom = 900.0
 theme = ExtResource("1_fqpw7")
 script = ExtResource("1_vtsnk")
-metadata/_custom_type_script = "uid://bp0csfb6elaxk"
 
 [node name="MPFCarousel" type="Control" parent="."]
 layout_mode = 1
@@ -28,7 +27,6 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("2_dtoft")
 carousel_name = "env_house_theme_selection"
-metadata/_custom_type_script = "uid://d1l65dskoes61"
 
 [node name="gryffindor" type="Node2D" parent="MPFCarousel"]
 
